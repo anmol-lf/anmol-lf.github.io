@@ -1,0 +1,7 @@
+*.DS_Store
+*.php
+comments/
+feed
+index*.html
+!index.html
+
