@@ -8,7 +8,7 @@
 <!--<![endif]-->
 
 
-<!-- Mirrored from localhost:8000/posts/30 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Mar 2016 05:04:39 GMT -->
+<!-- Mirrored from localhost:8000/posts/30 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2016 10:15:17 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8" />
@@ -294,14 +294,16 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 		    		<div class="entry-content">
 				<p>Extensions are a strong and impressive feature of Swift. So lets extend the UIView to take a snapshot of itself and return an UIImage.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
-		<div id="crayon-56f4c6a02ae6f377391225" class="crayon-syntax crayon-theme-vs2012 crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 15px !important; line-height: 18px !important;">
+		<div id="crayon-56f660ee979d2126546463" class="crayon-syntax crayon-theme-vs2012 crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 15px !important; line-height: 18px !important;">
 		
 			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 15px !important; line-height: 18px !important;">
 extension UIView {    
     func generateSnapshot() -&gt; UIImage {
+        var snapshotImage : UIImage? = nil
         UIGraphicsBeginImageContext(frame.size)
-        drawViewHierarchyInRect(bounds, afterScreenUpdates: true)
-        let snapshotImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        if drawViewHierarchyInRect(bounds, afterScreenUpdates: true) {
+            snapshotImage = UIGraphicsGetImageFromCurrentImageContext()
+        }
         UIGraphicsEndImageContext()
         return snapshotImage
     }
@@ -310,15 +312,15 @@ extension UIView {
 				<table class="crayon-table">
 					<tr class="crayon-row">
 				<td class="crayon-nums " data-settings="show">
-					<div class="crayon-nums-content" style="font-size: 15px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-56f4c6a02ae6f377391225-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6a02ae6f377391225-2">2</div><div class="crayon-num" data-line="crayon-56f4c6a02ae6f377391225-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6a02ae6f377391225-4">4</div><div class="crayon-num" data-line="crayon-56f4c6a02ae6f377391225-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6a02ae6f377391225-6">6</div><div class="crayon-num" data-line="crayon-56f4c6a02ae6f377391225-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6a02ae6f377391225-8">8</div><div class="crayon-num" data-line="crayon-56f4c6a02ae6f377391225-9">9</div></div>
+					<div class="crayon-nums-content" style="font-size: 15px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-56f660ee979d2126546463-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f660ee979d2126546463-2">2</div><div class="crayon-num" data-line="crayon-56f660ee979d2126546463-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f660ee979d2126546463-4">4</div><div class="crayon-num" data-line="crayon-56f660ee979d2126546463-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f660ee979d2126546463-6">6</div><div class="crayon-num" data-line="crayon-56f660ee979d2126546463-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f660ee979d2126546463-8">8</div><div class="crayon-num" data-line="crayon-56f660ee979d2126546463-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f660ee979d2126546463-10">10</div><div class="crayon-num" data-line="crayon-56f660ee979d2126546463-11">11</div></div>
 				</td>
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 15px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-56f4c6a02ae6f377391225-1"><span class="crayon-r">extension</span><span class="crayon-h"> </span><span class="crayon-e">UIView</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6a02ae6f377391225-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">func</span><span class="crayon-h"> </span><span class="crayon-e">generateSnapshot</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">-&gt;</span><span class="crayon-h"> </span><span class="crayon-e">UIImage</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-56f4c6a02ae6f377391225-3"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">UIGraphicsBeginImageContext</span><span class="crayon-sy">(</span><span class="crayon-v">frame</span><span class="crayon-sy">.</span><span class="crayon-v ">size</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6a02ae6f377391225-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">drawViewHierarchyInRect</span><span class="crayon-sy">(</span><span class="crayon-v">bounds</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">afterScreenUpdates</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-t">true</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-56f4c6a02ae6f377391225-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">let</span><span class="crayon-h"> </span><span class="crayon-v">snapshotImage</span><span class="crayon-h"> </span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">UIImage</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">UIGraphicsGetImageFromCurrentImageContext</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6a02ae6f377391225-6"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">UIGraphicsEndImageContext</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-56f4c6a02ae6f377391225-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">snapshotImage</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6a02ae6f377391225-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-56f4c6a02ae6f377391225-9"><span class="crayon-sy">}</span></div></div></td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 15px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-56f660ee979d2126546463-1"><span class="crayon-r">extension</span><span class="crayon-h"> </span><span class="crayon-e">UIView</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f660ee979d2126546463-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">func</span><span class="crayon-h"> </span><span class="crayon-e">generateSnapshot</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">-&gt;</span><span class="crayon-h"> </span><span class="crayon-e">UIImage</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-56f660ee979d2126546463-3"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">var</span><span class="crayon-h"> </span><span class="crayon-v">snapshotImage</span><span class="crayon-h"> </span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">UIImage</span><span class="crayon-sy">?</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">nil</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f660ee979d2126546463-4"><span class="crayon-e">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">UIGraphicsBeginImageContext</span><span class="crayon-sy">(</span><span class="crayon-v">frame</span><span class="crayon-sy">.</span><span class="crayon-v ">size</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-56f660ee979d2126546463-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-e">drawViewHierarchyInRect</span><span class="crayon-sy">(</span><span class="crayon-v">bounds</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">afterScreenUpdates</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-t">true</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f660ee979d2126546463-6"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">snapshotImage</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">UIGraphicsGetImageFromCurrentImageContext</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-56f660ee979d2126546463-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f660ee979d2126546463-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">UIGraphicsEndImageContext</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-56f660ee979d2126546463-9"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">snapshotImage</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f660ee979d2126546463-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-56f660ee979d2126546463-11"><span class="crayon-sy">}</span></div></div></td>
 					</tr>
 				</table>
 			</div>
 		</div>
-<!-- [Format Time: 0.0031 seconds] -->
-<p>&nbsp;</p>
+<!-- [Format Time: 0.0033 seconds] -->
+<p></p>
 
 							</div><!-- .entry-content -->
 		
@@ -334,8 +336,9 @@ extension UIView {
 			<div id="secondary" class="col-md-3 sidebar widget-area" role="complementary">
         <aside id="text-2" class="widget widget_text"><h4 class="widget-title">Hello World!</h4>			<div class="textwidget">I am Anmol, a swift developer (both by language and trait).
 My day job is as an iOS developer. If you need help in any open source project, would like to get in touch with me or would like me to write about anything swift; please create an issue in anmol-lf.github.io
-
-</div>
+<br>
+<br>
+<p class="read-more"><a class="btn btn-default" href="https://github.com/anmol-lf/anmol-lf.github.io/issues">Create Issue</a></p></div>
 		</aside></div><!-- #secondary .widget-area -->
 
 
@@ -361,5 +364,5 @@ My day job is as an iOS developer. If you need help in any open source project, 
 <script type='text/javascript' src='../wp-includes/js/wp-embed.minc1f9.js?ver=4.4.2'></script>
 </body>
 
-<!-- Mirrored from localhost:8000/posts/30 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Mar 2016 05:04:40 GMT -->
+<!-- Mirrored from localhost:8000/posts/30 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2016 10:15:17 GMT -->
 </html>

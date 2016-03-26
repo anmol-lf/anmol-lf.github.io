@@ -8,7 +8,7 @@
 <!--<![endif]-->
 
 
-<!-- Mirrored from localhost:8000/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Mar 2016 05:03:20 GMT -->
+<!-- Mirrored from localhost:8000/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2016 10:13:59 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8" />
@@ -291,33 +291,8 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 
 	
 				    <div class="entry-summary">
-		        <p>Extensions are a strong and impressive feature of Swift. So lets extend the UIView to take a snapshot of itself and return an UIImage. </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
-
-		<div id="crayon-56f4c6977bd7c909860378" class="crayon-syntax crayon-theme-vs2012 crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 15px !important; line-height: 18px !important;">
-		
-			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 15px !important; line-height: 18px !important;">
-extension UIView {    
-    func generateSnapshot() -&gt; UIImage {
-        UIGraphicsBeginImageContext(frame.size)
-        drawViewHierarchyInRect(bounds, afterScreenUpdates: true)
-        let snapshotImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return snapshotImage
-    }
-}</textarea></div>
-			<div class="crayon-main" style="">
-				<table class="crayon-table">
-					<tr class="crayon-row">
-				<td class="crayon-nums " data-settings="show">
-					<div class="crayon-nums-content" style="font-size: 15px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-56f4c6977bd7c909860378-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977bd7c909860378-2">2</div><div class="crayon-num" data-line="crayon-56f4c6977bd7c909860378-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977bd7c909860378-4">4</div><div class="crayon-num" data-line="crayon-56f4c6977bd7c909860378-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977bd7c909860378-6">6</div><div class="crayon-num" data-line="crayon-56f4c6977bd7c909860378-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977bd7c909860378-8">8</div><div class="crayon-num" data-line="crayon-56f4c6977bd7c909860378-9">9</div></div>
-				</td>
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 15px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-56f4c6977bd7c909860378-1"><span class="crayon-r">extension</span><span class="crayon-h"> </span><span class="crayon-e">UIView</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977bd7c909860378-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">func</span><span class="crayon-h"> </span><span class="crayon-e">generateSnapshot</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">-&gt;</span><span class="crayon-h"> </span><span class="crayon-e">UIImage</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-56f4c6977bd7c909860378-3"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">UIGraphicsBeginImageContext</span><span class="crayon-sy">(</span><span class="crayon-v">frame</span><span class="crayon-sy">.</span><span class="crayon-v ">size</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977bd7c909860378-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">drawViewHierarchyInRect</span><span class="crayon-sy">(</span><span class="crayon-v">bounds</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">afterScreenUpdates</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-t">true</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-56f4c6977bd7c909860378-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-r">let</span><span class="crayon-h"> </span><span class="crayon-v">snapshotImage</span><span class="crayon-h"> </span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-v">UIImage</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">UIGraphicsGetImageFromCurrentImageContext</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977bd7c909860378-6"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">UIGraphicsEndImageContext</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-56f4c6977bd7c909860378-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">snapshotImage</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977bd7c909860378-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-56f4c6977bd7c909860378-9"><span class="crayon-sy">}</span></div></div></td>
-					</tr>
-				</table>
-			</div>
-		</div>
-<!-- [Format Time: 0.0016 seconds] -->
-<p> &nbsp;</p>
+		        <p>Extensions are a strong and impressive feature of Swift. So lets extend &#8230;
+<p class="read-more"><a class="btn btn-default" href="posts/30.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
 		    </div><!-- .entry-summary -->
 		 
 
@@ -349,38 +324,8 @@ extension UIView {
 
 	
 				    <div class="entry-summary">
-		        <p>Swift borrows a lot of features from the functional family. Most of the traits of a functional language is available in swift. Functions are treated as first class citizens in Swift and are value typed. Function decoration a way to extend functionality of a function. </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
-
-		<div id="crayon-56f4c6977c333921865200" class="crayon-syntax crayon-theme-vs2012 crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 15px !important; line-height: 18px !important;">
-		
-			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 15px !important; line-height: 18px !important;">
-var aFunction = {
-    print("a")
-}
-
-aFunction()
-
-var tempFunction = aFunction
- 
-aFunction = {
-    print("b")
-    tempFunction()
-}
- 
-aFunction()</textarea></div>
-			<div class="crayon-main" style="">
-				<table class="crayon-table">
-					<tr class="crayon-row">
-				<td class="crayon-nums " data-settings="show">
-					<div class="crayon-nums-content" style="font-size: 15px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-56f4c6977c333921865200-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977c333921865200-2">2</div><div class="crayon-num" data-line="crayon-56f4c6977c333921865200-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977c333921865200-4">4</div><div class="crayon-num" data-line="crayon-56f4c6977c333921865200-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977c333921865200-6">6</div><div class="crayon-num" data-line="crayon-56f4c6977c333921865200-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977c333921865200-8">8</div><div class="crayon-num" data-line="crayon-56f4c6977c333921865200-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977c333921865200-10">10</div><div class="crayon-num" data-line="crayon-56f4c6977c333921865200-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977c333921865200-12">12</div><div class="crayon-num" data-line="crayon-56f4c6977c333921865200-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-56f4c6977c333921865200-14">14</div></div>
-				</td>
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 15px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-56f4c6977c333921865200-1"><span class="crayon-r">var</span><span class="crayon-h"> </span><span class="crayon-v">aFunction</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977c333921865200-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">print</span><span class="crayon-sy">(</span><span class="crayon-s">"a"</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-56f4c6977c333921865200-3"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977c333921865200-4">&nbsp;</div><div class="crayon-line" id="crayon-56f4c6977c333921865200-5"><span class="crayon-e">aFunction</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977c333921865200-6">&nbsp;</div><div class="crayon-line" id="crayon-56f4c6977c333921865200-7"><span class="crayon-r">var</span><span class="crayon-h"> </span><span class="crayon-v">tempFunction</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">aFunction</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977c333921865200-8"><span class="crayon-e"> </span></div><div class="crayon-line" id="crayon-56f4c6977c333921865200-9"><span class="crayon-v">aFunction</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977c333921865200-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">print</span><span class="crayon-sy">(</span><span class="crayon-s">"b"</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-56f4c6977c333921865200-11"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-e">tempFunction</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977c333921865200-12"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-56f4c6977c333921865200-13"><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-56f4c6977c333921865200-14"><span class="crayon-e">aFunction</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div></div></td>
-					</tr>
-				</table>
-			</div>
-		</div>
-<!-- [Format Time: 0.0007 seconds] -->
-<p> Here, aFunction was extended to print &#8216;b&#8217; first and then do what aFunction is expected to do.</p>
+		        <p>Swift borrows a lot of features from the functional family. Most of &#8230;
+<p class="read-more"><a class="btn btn-default" href="posts/28.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
 		    </div><!-- .entry-summary -->
 		 
 
@@ -399,8 +344,9 @@ aFunction()</textarea></div>
 				<div id="secondary" class="col-md-3 sidebar widget-area" role="complementary">
         <aside id="text-2" class="widget widget_text"><h4 class="widget-title">Hello World!</h4>			<div class="textwidget">I am Anmol, a swift developer (both by language and trait).
 My day job is as an iOS developer. If you need help in any open source project, would like to get in touch with me or would like me to write about anything swift; please create an issue in anmol-lf.github.io
-
-</div>
+<br>
+<br>
+<p class="read-more"><a class="btn btn-default" href="https://github.com/anmol-lf/anmol-lf.github.io/issues">Create Issue</a></p></div>
 		</aside></div><!-- #secondary .widget-area -->
 
 
@@ -427,7 +373,7 @@ My day job is as an iOS developer. If you need help in any open source project, 
 <script type='text/javascript' src='wp-includes/js/wp-embed.minc1f9.js?ver=4.4.2'></script>
 </body>
 
-<!-- Mirrored from localhost:8000/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Mar 2016 05:03:32 GMT -->
+<!-- Mirrored from localhost:8000/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Mar 2016 10:14:10 GMT -->
 </html>
 
 			
