@@ -4,6 +4,8 @@
 comments/
 feed
 feed.html
+*.html
+!*/*.html
 index*.html
 !index.html
 
